@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classification Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Detected: {{ family }} ({{ kind }})</h2>
+    <img src="{{ image_path }}" class="preview">
+    <p>{{ description }}</p>
+    <a href="{{ url_for('index') }}">Try Another</a>
+  </div>
+</body>
+</html>
